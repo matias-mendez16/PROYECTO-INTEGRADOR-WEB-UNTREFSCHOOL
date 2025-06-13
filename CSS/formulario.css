@@ -1,0 +1,81 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "navbar"
+        "formulario"
+        "footer";
+    margin: 0 4em;
+    padding: 1em;
+    row-gap: 2em;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main-formulario {
+    grid-area: formulario;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+form {
+    color: #1F8A70;
+    background-image: url("../Logos/logo-Untref-School-titulo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    padding: 5%;
+    border: 6px double #181823;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.btn-nav:link, .btn-nav:visited {
+    text-decoration: none;
+    color: #181823;
+}
+
+.btn-nav:hover {
+    cursor: pointer;
+    color: #FC7300;
+}
+
+.btn-nav:active {
+    color: #00425A ;
+}
+
+.formulario {
+    border: 6px double #181823;
+    width: 50%;
+    height: 40px;
+    border-radius: 7px;
+    margin-bottom: 2%;
+    box-shadow: 5px 5px #00425A;
+}
+
+.comentario {
+    border: 6px double #181823;
+    width: 50%;
+    height: 120px;
+    border-radius: 7px;
+    box-shadow: 5px 5px #00425A;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .container {
+        margin: 0;
+        padding: .5em;
+    }
+
+    form {
+        padding: 10%;
+    }
+}
